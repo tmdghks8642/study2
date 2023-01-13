@@ -9,10 +9,12 @@
         <!-- <script src="./alert.js"></script> -->
         <script>
           
-          let name = prompt("이름이 무엇입니까?",["what your name?"]);
+          let name = prompt('이름을 대시오','');
           
-        alert(`당신의 이름은 ${name} 입니다.`);
-
+        // alert(`당신의 이름은 ${name} 이 맞소?`);
+        
+        let name2 = confirm(`당신의 이름이 ${name} 이 맞소?`)
+            alert(name2);
         </script>
     </body>
 </html>
