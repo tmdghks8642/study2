@@ -8,14 +8,35 @@
         <p>javascript 공부</p>
         <!-- <script src="alert.js"></script> -->
         <script>
-            let name = prompt('javascript의 공식이름은 무엇일까요?','?');
+           
+         let userId = prompt("아이디를 입력해주세요",'') ; 
 
-            if (name == 'ECMAScript'){
-                alert('정답입니다!');
-            }
-            else{
-                alert('모르셨나요? 정답은 ECMAScript 입니다!');
-            }
+         if (userId == 'Admin') {
+            
+                let userPwd = prompt ('비밀번호를 입력해주세요','') ;
+                
+                if (userPwd == 'TneMaster')
+                {
+                    alert("환영합니다!");
+                }
+                else if (userPwd == ''|| userPwd== null)
+                {
+                    alert ('취소되었습니다.');
+                }
+                else {
+                    alert("인증에 실패했습니다.");
+                }
+         }
+         
+         else if (userId == '' || userId == null) 
+         {
+            alert("취소되었습니다.");
+         }
+         else
+         {
+            alert('인증되지 않은 사람입니다.');
+         }
+
 
         </script>
     </body>
