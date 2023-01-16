@@ -8,18 +8,24 @@
         <p>javascript 공부</p>
         <!-- <script src="alert.js"></script> -->
         <script>
-                let num  =10 ; 
+           let a =+prompt('a?', ''); 
 
-                number : 
-                for ( let i = 2 ; i <= num ; i++) {
+           switch(a) {
+            case 0 : 
+            alert( 0 );
+            break;
 
-                    for ( let j = 2 ; j < i ; j++) {
-                        if(i%j == 0 ) continue number ; 
-                    }
-                    alert (i);
-                }
-
+            case 1 : 
+            alert ( 1 ) ;
+            break;
             
+            case 2 :
+            case 3 :
+            alert('2,3');
+            break;
+            
+        }
+         
 
         </script>
     </body>
