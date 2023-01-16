@@ -8,11 +8,16 @@
         <p>javascript 공부</p>
         <!-- <script src="alert.js"></script> -->
         <script>
-                let value ; 
-                do {
-                    value = prompt("100보다 큰 수를 입력해주세요", "") ;
+                let num  =10 ; 
 
-                } while (value <=100 && value) ;
+                number : 
+                for ( let i = 2 ; i <= num ; i++) {
+
+                    for ( let j = 2 ; j < i ; j++) {
+                        if(i%j == 0 ) continue number ; 
+                    }
+                    alert (i);
+                }
 
             
 
